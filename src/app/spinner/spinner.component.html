@@ -1,0 +1,6 @@
+<!-- Way 2-->
+<!-- <div class="page-overlay-wrapper" *ngIf="showSpinner"> -->
+<!-- Way 1-->
+<div class="page-overlay-wrapper" *ngIf="this.getSpinnerService().getIsLoading() | async">
+    <div class="bee-spinner"></div>
+</div>
